@@ -1,0 +1,15 @@
+body{
+    background-color:rgb(255, 255, 255);
+}
+
+input{
+    border-width: 3px;
+    border-style: solid;
+    border-color: #343A40;
+}
+
+button{
+    border-width: 3px;
+    border-style: solid;
+    border-color: #343A40;
+}
