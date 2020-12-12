@@ -59,23 +59,6 @@
                                     </div>
                                 </div>
 
-                                                        <div class="row">
-                                    <div class="col-md-12 mb-5 mt-5 d-flex justify-content-center   flex-wrap">
-                                        <div class="card mb-5 mr-4 ml-4 p-2" style="width: 18rem;"
-                                            *ngFor="let item of listaPostagens">
-                                            <img class="card-img-top"
-                                                src="https://www.casasbahia-imagens.com.br/TelefoneseCelulares/Smartphones/Android/1500966412/1194935281/celular-motorola-moto-g8-plus-azul-safira-64gb-camera-tripla-48mp-5mp-16mp-1500966412.jpg"
-                                                alt="Imagem de capa do card">
-                                            <div class="card-body">
-                                                <h5 class="card-title">{{ item.titulo }}</h5>
-                                                <p class="card-text">{{ item.tema.descricao }}</p>
-
-                                                <a href="#" class="btn btn-primary">Comprar</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> 
-
                                 <div class="row">
                                     <div class="col-md-12">
 
@@ -88,11 +71,11 @@
                                                     </div>
                                                     <div class="col-md-4 d-flex justify-content-end">
                             
-                                                        <button class="mr-3 btn btn-outline-info">
+                                                        <button class="mr-3 btn btn-outline-info" [routerLink]="['/editar-post', item.id]">
                                                             Editar
                                                         </button>
                             
-                                                        <button class="btn btn-outline-danger ml-3">
+                                                        <button class="btn btn-outline-danger ml-3" [routerLink]="['/delete-post', item.id]">
                                                             Apagar
                                                         </button>
                             
